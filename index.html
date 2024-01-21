@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Latest compiled and minified CSS -->
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/62fc297007.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">  
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">  
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet">  
+</head>
+<body style="background-color: hsl(5, 51%, 83%);">
+    <header class="p-4 shadow-4 rounded-3 jumbotron" style="background-color: hsl(0, 68%, 62%);">
+        <h2 style="text-align: center; font-family: Arial">SUDOKU OF VALUE DRAWINGS</h2>
+        <p style="text-align: justify; font-size: medium; " class="container">This is a remake of the Sudoku game, whit value drawings. Fill in the grid so 
+            that every horizontal row, every vertical column and every 3x3 box contains the 
+            9 drawings without repeating the drawings in the same row, column or box. You 
+            can't change the drawings already given. All the best!</p>
+    </header>
+    <div class="container">
+        
+        <div class="row">
+            <div id = "board" class="board justify-content-center offset-5 col-sm-6 col-12">
+            
+            </div>
+            
+            <div class="offset-2 col-sm-2 col-12">
+                <ul style="list-style: none;">
+                    <li>
+                        <button id="checkSud" class="btn btn-danger" >
+                            Check
+                        </button>
+                    </li>
+                    <br>
+                    <li>
+                        <button id="easySud" class="btn btn-primary" >
+                            Easy Sudoku
+                        </button>
+                    </li>
+                    <br>
+                    <li>
+                        <button id="hardSud" class="btn  btn-primary" >
+                            Hard Sudoku
+                        </button>
+                    </li>
+                    
+                </ul>
+                <!--  -->
+            </div>
+                <ul class="col-sm-2" style="font-family: FontAwesome, 'Times New Roman', Times, serif; list-style: none; font-size: 20px; text-align: center;">
+                    <li>
+                        &#xf004; <p>LOVE</p>
+                    </li>
+                    <br>
+                    <li>
+                        &#xf534;  <p>INFINITE</p>
+                    </li>
+                    <br>
+                    <li>
+                        &#x3f; <p>SPIRIT OF ENQUIRY</p>
+                    </li>
+                    <br>
+                    <li>
+                        &#xf005; <p>INNER SHINE</p>
+                    </li>
+                    <br>
+                    <li>
+                        &#x3d; <p>JOY</p>
+                    </li>
+                </ul>
+                <ul class="col-sm-2" style="font-family: FontAwesome, 'Times New Roman', Times, serif; list-style: none; font-size: 20px; text-align: center;">
+                    <li>
+                        &#xf118; <p>EQUALITY</p>
+                    </li>
+                    <br>
+                    <li>
+                        &#xf185; <p>SUN LIGHT</p>
+                    </li>
+                    <br>
+                    <li>
+                        &#xf186; <p>MOON LIGHT</p>
+                    </li>
+                    <br>
+                    <li>
+                        &#xf00c; <p>RIGHT</p>
+                    </li>
+                </ul>
+            
+        </div>
+        
+                
+            
+        
+    </div>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>  
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.6.0/js-yaml.min.js"> </script>  
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"> </script>  
+    <script type="module" defer src="scripts/app.js"></script>
+</body>
+</html>

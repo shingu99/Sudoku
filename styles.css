@@ -1,0 +1,70 @@
+.board{
+    margin: 0 auto;
+    text-align: center;
+   
+}
+select {
+    font-family: 'FontAwesome' , 'arial';
+  }
+button.btn{
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.board select {
+    text-align: center;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border: 1px #808080 solid;
+    -webkit-appearance: none;
+}
+
+li p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 480px) {
+    .board select{
+        text-align: center;
+        font-size: 20px;
+        width: 32px;
+        height: 32px;
+        border: 1px #808080 solid;
+        -webkit-appearance: none;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            padding: 10px;
+            text-align: center;
+          }
+          li{
+            font-size: small;
+          }
+          li p{
+            font-size: 15px;
+            width: fit-content;
+            height: fit-content;
+          }
+          button.btn{
+            margin-right: 10px;
+          }
+  }
+
+select.line{
+    border-right:3px black solid;
+}
+
+
+.row{
+    padding: 10px;
+}
+
+select.bline{
+    border-bottom:3px black solid;
+}
