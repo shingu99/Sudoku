@@ -27,7 +27,7 @@ export function boardDraw()
         let k=0;
         const inputEl = document.createElement("select");
         inputEl.setAttribute("style", "font-family: 'FontAwesome'");
-        const arr = [" ","&#xf004","&#xf534","&#x3f","&#xf005","&#x3d","&#xf118","&#xf185","&#xf186","&#xf00c"];//this can be changed
+        const arr = [" ",1,2,3,4,5,6,7,8,9];//this can be changed
             arr.forEach(element => {
             const opt = document.createElement("option");
             opt.innerHTML = element;
@@ -48,11 +48,18 @@ export function boardDraw()
         {
             setAttributes(inputEl, attributes);
         }
+
+        if(i==3||i==4||i==5||i==12||i==13||i==14||i==21||i==22||i==23||i==27||i==28||i==29||i==36||i==37||i==38||i==45||i==46||i==47||i==33||i==34||
+            i==35||i==42||i==43||i==44||i==51||i==52||i==53||i==57||i==58||i==59||i==66||i==67||i==68||i==75||i==76||i==77)
+            {
+                inputEl.classList.add("colorGrey");
+            }
         board.appendChild(inputEl);
 
     }
     
 }
+
 
 export function clear()
 {
@@ -60,7 +67,10 @@ export function clear()
     clrSelInput.forEach(element => {
         element.value = 0;
         if(element.disabled===true)
+           { 
             element.disabled = false;
+            element.classList.remove("colorRed");
+            }
     });
 }
 

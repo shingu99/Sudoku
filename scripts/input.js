@@ -1,5 +1,4 @@
-
-
+import { generate } from "./generate.js"
 
 export function insertValues(diff)
 {
@@ -27,26 +26,28 @@ let inputHard = [
     0,0,1,0,0,0,2,0,0,
     4,0,0,0,2,0,0,0,0
 ]
+    let sudBoard = generate(diff, true);
+    console.log(sudBoard);
     const selInput = document.querySelectorAll('select');
-    if(diff==="easy")
-   { 
+
         for(let i=0; i<81; i++)
         {
-            if(inputEasy[i]!=0)
+            if(sudBoard[i]!='.')
             {
-                selInput[i].value = inputEasy[i];
+                selInput[i].value = sudBoard[i];
                 selInput[i].disabled = true;    
+                selInput[i].classList.add("colorRed");
             }
         }
-    }
-    else{
-        for(let i=0; i<81; i++)
-        {
-            if(inputHard[i]!=0)
-            {
-                selInput[i].value = inputHard[i];
-                selInput[i].disabled = true;    
-            }
-        }
-    }
+    
+    // else{
+    //     for(let i=0; i<81; i++)
+    //     {
+    //         if(inputHard[i]!=0)
+    //         {
+    //             selInput[i].value = inputHard[i];
+    //             selInput[i].disabled = true;    
+    //         }
+    //     }
+    // }
 }

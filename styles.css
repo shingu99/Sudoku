@@ -1,7 +1,5 @@
 .board{
-    margin: 0 auto;
     text-align: center;
-   
 }
 select {
     font-family: 'FontAwesome' , 'arial';
@@ -11,13 +9,63 @@ button.btn{
     border-radius: 5px;
 }
 
+nav{
+  border: 1px solid white;
+  border-radius: 45px;
+  background-color: black;
+  color: white;
+  margin: auto;
+  width: 62%;
+}
+nav .navDiv{
+  color: white;
+}
+
+nav a.nav-link:hover{
+  cursor: pointer;
+  color: red;
+}
+
+nav h4{
+  margin-left: 20px;
+  padding-top: 10px;
+}
+nav ul li{
+  color: white;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.center{
+  margin: auto;
+  width: 50%;
+}
+
 .board select {
     text-align: center;
     font-size: 30px;
     width: 60px;
     height: 60px;
-    border: 1px #808080 solid;
+    background-color: black;
+    border: 1px white solid;
     -webkit-appearance: none;
+    color: rgb(255, 255, 255);
+}
+
+.board select.colorRed{
+  color: rgb(235, 108, 108);
+}
+
+.board select.colorGrey{
+  background-color: rgb(29, 28, 28);
+}
+
+div.buttonDiv{
+  display: inline;
+}
+
+li{
+  display: inline;
 }
 
 li p {
@@ -25,8 +73,33 @@ li p {
     font-family: 'Times New Roman', Times, serif;
 }
 
+#board{
+  width: 600px;
+}
+
+.footer a{
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+#section2{
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
 @media screen and (max-width: 480px) {
-    .board select{
+  #board{
+    width: 320px;
+  } 
+  nav{
+    margin: auto;
+    width: 70%;
+  } 
+
+  .board select{
         text-align: center;
         font-size: 20px;
         width: 32px;
@@ -57,7 +130,7 @@ li p {
   }
 
 select.line{
-    border-right:3px black solid;
+    border-right:3px white solid;
 }
 
 
@@ -66,5 +139,5 @@ select.line{
 }
 
 select.bline{
-    border-bottom:3px black solid;
+    border-bottom:3px white solid;
 }
