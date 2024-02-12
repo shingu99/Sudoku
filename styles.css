@@ -53,11 +53,11 @@ nav ul li{
 }
 
 .board select.colorRed{
-  color: rgb(235, 108, 108);
+  color: rgb(235, 73, 73);
 }
 
 .board select.colorGrey{
-  background-color: rgb(29, 28, 28);
+  background-color: rgb(65, 64, 64);
 }
 
 div.buttonDiv{
