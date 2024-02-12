@@ -15,7 +15,8 @@ nav{
   background-color: black;
   color: white;
   margin: auto;
-  width: 62%;
+  width: 57%;
+  font-family: 'Quicksand', sans-serif;
 }
 nav .navDiv{
   color: white;
@@ -26,9 +27,9 @@ nav a.nav-link:hover{
   color: red;
 }
 
-nav h4{
-  margin-left: 20px;
-  padding-top: 10px;
+nav h5{
+  margin-left: 15px;
+  margin-top: 20px;
 }
 nav ul li{
   color: white;
@@ -96,7 +97,7 @@ li p {
   } 
   nav{
     margin: auto;
-    width: 70%;
+    width: 55%;
   } 
 
   .board select{
